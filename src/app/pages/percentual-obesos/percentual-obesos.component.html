@@ -1,0 +1,10 @@
+<div>
+    <label>Sexo:</label>
+    <select (change)="onChangeSexo($event.target.value)" >
+      <option selected>Selecione o sexo</option>
+      <option value="MASCULINO">MASCULINO</option>
+      <option value="FEMININO">FEMININO</option>
+  </select>
+  </div>
+  
+  <p>Percentual de Obesos: {{ percentualObesos }}</p>

@@ -1,0 +1,15 @@
+<label>
+    Idade inicial:
+    <input type="number" formControlName="idadeInicial" id="idadeInicial" name="idadeInicial" (change)="onChangeI($event.target.value)">
+  </label>
+
+  <label>
+    Idade final:
+    <input type="number" formControlName="idadeFinal" id="idadeFinal" name="idadeFinal" (change)="onChangeF($event.target.value)">
+  </label>
+
+  <p>
+    <button (click)="updateIdade()">Enviar</button>
+  </p>
+
+  <p>IMC médio por idade: {{imcMedioPorIdade}}</p>

@@ -1,0 +1,112 @@
+<div>
+    <label>Estado:</label>
+    <select (change)="onChange($event.target.value)" class="btn btn-default dropdown-toggle error" >
+      <option selected>Selecione o estado</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+  </select>
+  </div>
+  
+  <p>Quantidade de candidatos: {{ quantidadeCandidatoPorEstado }}</p>
+
+  <br>
+  <br>
+  <br>
+
+  <label>
+    Idade inicial:
+    <input type="number" formControlName="idadeInicial" id="idadeInicial" name="idadeInicial" (change)="onChangeI($event.target.value)">
+  </label>
+
+  <label>
+    Idade final:
+    <input type="number" formControlName="idadeFinal" id="idadeFinal" name="idadeFinal" (change)="onChangeF($event.target.value)">
+  </label>
+
+  <p>
+    <button (click)="updateIdade()">Enviar</button>
+  </p>
+
+  <p>IMC médio por idade: {{imcMedioPorIdade}}</p>
+
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <label>Sexo:</label>
+    <select (change)="onChangeSexo($event.target.value)" class="btn btn-default dropdown-toggle error">
+      <option selected>Selecione o sexo</option>
+      <option value="MASCULINO">MASCULINO</option>
+      <option value="FEMININO">FEMININO</option>
+  </select>
+  </div>
+  
+  <p>Percentual de Obesos: {{ percentualObesos }}</p>
+
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <label>Tipo Sanguineo:</label>
+    <select (change)="onChangeTS($event.target.value)" class="btn btn-default dropdown-toggle error">
+      <option selected>Selecione o tipo sanguineo</option>
+      <option value="APOTIVO">A+</option>
+      <option value="ANEGATIVO">A-</option>
+      <option value="BPOSITIVO">B+</option>
+      <option value="BNEGATIVO">B-</option>
+      <option value="ABPOSITIVO">AB+</option>
+      <option value="ABNEGATIVO">AB-</option>
+      <option value="OPOSITIVO">O+</option>
+      <option value="ONEGATIVO">O-</option>
+  </select>
+  </div>
+  
+  <p>Média de idade por tipo sanguineo: {{ mediaIdadePorTipoSanguineo }}</p>
+
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <label>Tipo Sanguineo:</label>
+    <select (change)="onChangePossiveisDoadores($event.target.value)" class="btn btn-default dropdown-toggle error">
+      <option selected>Selecione o tipo sanguineo</option>
+      <option value="APOTIVO">A+</option>
+      <option value="ANEGATIVO">A-</option>
+      <option value="BPOSITIVO">B+</option>
+      <option value="BNEGATIVO">B-</option>
+      <option value="ABPOSITIVO">AB+</option>
+      <option value="ABNEGATIVO">AB-</option>
+      <option value="OPOSITIVO">O+</option>
+      <option value="ONEGATIVO">O-</option>
+  </select>
+  </div>
+  
+  <p>Quantidade possíveis doadores: {{ quantidadePossiveisDoadores }}</p>

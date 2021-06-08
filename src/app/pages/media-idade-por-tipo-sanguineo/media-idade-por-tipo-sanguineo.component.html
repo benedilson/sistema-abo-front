@@ -1,0 +1,16 @@
+<div>
+    <label>Tipo Sanguineo:</label>
+    <select (change)="onChangeTS($event.target.value)" >
+      <option selected>Selecione o tipo sanguineo</option>
+      <option value="APOTIVO">A+</option>
+      <option value="ANEGATIVO">A-</option>
+      <option value="BPOSITIVO">B+</option>
+      <option value="BNEGATIVO">B-</option>
+      <option value="ABPOSITIVO">AB+</option>
+      <option value="ABNEGATIVO">AB-</option>
+      <option value="OPOSITIVO">O+</option>
+      <option value="ONEGATIVO">O-</option>
+  </select>
+  </div>
+  
+  <p>Média de idade por tipo sanguineo: {{ mediaIdadePorTipoSanguineo }}</p>
